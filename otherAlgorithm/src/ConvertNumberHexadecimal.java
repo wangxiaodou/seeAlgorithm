@@ -45,6 +45,6 @@ public class ConvertNumberHexadecimal {
     }
 
     public static void main(String[] args){
-        System.out.println(convertToHexadecimal(256));
+        System.out.println(convertToHexadecimal(14));
     }
 }
