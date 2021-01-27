@@ -7,3 +7,7 @@
 
 1、String char 转化 int 的 s.charAt(i) - '0' 就能回去获取数值
 
+2、队列的实例化中 如果式Queue queue = new LikedList<>(); 的话，添加元素可以是
+  queue.add(1);
+  queue.offer(1);
+  queue.poll(); 就是弹出一个元素
