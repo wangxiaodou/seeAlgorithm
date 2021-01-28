@@ -12,3 +12,7 @@
   queue.offer(1);
   queue.poll(); 就是弹出一个元素，删除元素
   queue.peek();// 获取队列头元素，但是不删除
+3、数组类数组填充
+    int[] dp = new int[amount+1];
+    int max = amount + 1;
+    Arrays.fill(dp, max);
