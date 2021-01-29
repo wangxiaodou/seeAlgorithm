@@ -1,30 +1,23 @@
 # 算法学习小记录
-### 2021-01-07 开始学习算法记录  争取每天三道题，每天复习前一天的ji'mo
+### 2021-01-07 开始学习算法记录  争取每天三道题，每天复习前一天的记录
 
-## 01-18 数组中子数组的最大累乘积
+整理自己刷题过程中小窍门的知识
 
-![image-20210118141537266](D:\otherWorkspaces\seeAlgorithm\otherAlgorithm\images\image-20210118141537266.png)
+之前整理过，不过都丢失了，只记得一个
 
-## 2、打印N个数组整体最大的top K   ![image-20210118141635913](D:\otherWorkspaces\seeAlgorithm\otherAlgorithm\images\image-20210118141635913.png)
+1、String char 转化 int 的 s.charAt(i) - '0' 就能回去获取数值
 
-​	 ![image-20210118141657888](D:\otherWorkspaces\seeAlgorithm\otherAlgorithm\images\image-20210118141657888.png)
+2、队列的实例化中 如果式Queue queue = new LinkedList<>(); 的话，添加元素可以是
+  queue.add(1);
+  queue.offer(1);
+  queue.poll(); 就是弹出一个元素，删除元素
+  queue.peek();// 获取队列头元素，但是不删除
 
-## 3、设计一个含有getMin 功能的栈
-
-![image-20210118183529334](D:\otherWorkspaces\seeAlgorithm\otherAlgorithm\images\image-20210118183529334.png)
-
-## 4、有两个栈组成队列的形式
-
-​    ![image-20210118183552556](D:\otherWorkspaces\seeAlgorithm\otherAlgorithm\images\image-20210118183552556.png)
-
-## 5、如何使用递归函数和栈操作逆序一个栈
-
-   ![image-20210118202145027](D:\otherWorkspaces\seeAlgorithm\otherAlgorithm\images\image-20210118202145027.png)
-
-## 6、用一个栈实现另一个栈的排序
-
-  一个栈元素的类型为整型，现在想将该栈从顶按照从大到小的顺序进行排序，秩序申请一个栈，除此之外可以申请新的变量，但不能申请额外的数据结构，如何完成排序？
-
-7、用栈来求解汉诺塔
-
-​    ![image-20210119155418098](D:\otherWorkspaces\seeAlgorithm\otherAlgorithm\images\image-20210119155418098.png)
+3、数组类数组填充
+    int[] dp = new int[amount+1];
+    int max = amount + 1;
+    Arrays.fill(dp, max);
+ 4、  List<Integer> list = new LinkedList<Integer>();
+        Integer[] res =list.toArray(new Integer[0]);
+       //  String[] y = list.toArray(new String[0]);
+        Arrays.sort(res);
