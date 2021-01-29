@@ -17,3 +17,7 @@
     int[] dp = new int[amount+1];
     int max = amount + 1;
     Arrays.fill(dp, max);
+ 4、  List<Integer> list = new LinkedList<Integer>();
+        Integer[] res =list.toArray(new Integer[0]);
+       //  String[] y = list.toArray(new String[0]);
+        Arrays.sort(res);
